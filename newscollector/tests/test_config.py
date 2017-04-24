@@ -48,7 +48,7 @@ for sources in (sources_main, sources_dtp):
 
             # Тест кода ответа
             test_name = 'test_resp_code_{}'.format(source.get('name'))
-            test = test_assertEqual(grab.response.code, 200, test_url)
+            test = test_assertEqual(grab.doc.code, 200, test_url)
             setattr(ConfigTest, test_name, test)
 
             for attr_name, xpath in attributes_text.items():

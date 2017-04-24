@@ -63,7 +63,7 @@ def retrieve_information(config, url, related_from_url=None, region=None):
     grab = Grab(timeout=90, connect_timeout=30)
     grab.go('{}{}'.format(base_url, url))
 
-    if grab.response.code == 404:
+    if grab.doc.code == 404:
         print('url returned 404 {}{}'.format(base_url, url))
         return
 
