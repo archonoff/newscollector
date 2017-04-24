@@ -10,8 +10,8 @@ PROCESS_RECURSIVE_LINKS = False
 PROCESS_RELATED_LINKS = False
 
 # Данные для доступа к Celery
-CELERY_BACKEND = 'rpc://guest@192.168.1.108//'
-CELERY_BROKER = 'pyamqp://guest@192.168.1.108//'
+CELERY_BACKEND = 'rpc://guest@localhost//'
+CELERY_BROKER = 'pyamqp://guest@localhost//'
 
 try:
     from .local_settings import *
