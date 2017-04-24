@@ -4,10 +4,10 @@ from py2neo import Graph
 from py2neo.ogm import GraphObject
 from json import dumps
 
-from newscollector.generic_functions import normalizer
-from newscollector.settings import *
-from newscollector.my_exceptions import ConfigurationError, DBError
-from newscollector.models import Source, News, Date, Tag, Region
+from .generic_functions import normalizer
+from .settings import *
+from .my_exceptions import ConfigurationError, DBError
+from .models import Source, News, Date, Tag, Region
 
 
 graph = Graph(host=GRAPH_HOST, password=GRAPH_PASS)

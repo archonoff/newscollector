@@ -14,6 +14,6 @@ CELERY_BACKEND = 'rpc://guest@192.168.1.108//'
 CELERY_BROKER = 'pyamqp://guest@192.168.1.108//'
 
 try:
-    from newscollector.local_settings import *
+    from .local_settings import *
 except:
     pass

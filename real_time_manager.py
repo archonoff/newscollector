@@ -3,8 +3,8 @@
 from time import sleep
 from threading import Thread
 
-from newscollector.newscollector_worker import search_index
-from newscollector.db_functions import add_source_if_missed
+from .newscollector_worker import search_index
+from .db_functions import add_source_if_missed
 
 
 def read_configs(fname):

@@ -2,7 +2,7 @@
 
 from datetime import datetime
 
-from newscollector.yandex_news import YandexSpider
+from .yandex_news import YandexSpider
 
 
 def read_configs(fname):

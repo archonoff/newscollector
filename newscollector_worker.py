@@ -7,8 +7,8 @@ import logging
 from celery import Celery
 from grab import Grab
 
-from newscollector.db_functions import get_news_from_db, add_news, add_relation
-from newscollector.settings import CELERY_BACKEND, CELERY_BROKER, PROCESS_RECURSIVE_LINKS, PROCESS_RELATED_LINKS
+from .db_functions import get_news_from_db, add_news, add_relation
+from .settings import CELERY_BACKEND, CELERY_BROKER, PROCESS_RECURSIVE_LINKS, PROCESS_RELATED_LINKS
 
 app = Celery('newscollector.newscollector_worker', backend=CELERY_BACKEND, broker=CELERY_BROKER)
 

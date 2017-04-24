@@ -11,7 +11,7 @@ from stem import Signal
 from grab import Grab
 from grab.error import GrabNetworkError
 
-from newscollector.newscollector_worker import retrieve_information
+from .newscollector_worker import retrieve_information
 
 '''
 https://news.yandex.ru/yandsearch
